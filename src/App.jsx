@@ -4,7 +4,7 @@ import { LoadingScreen } from "./Components/LoadingScreen";
 import "./index.css";
 
 function App() {
-  const [isLoaded, setLoaded] = useState(true);
+  const [isLoaded, setLoaded] = useState(false);
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
